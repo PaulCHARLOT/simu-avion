@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulateur de Vol - Manuel d'utilisation</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Simulateur de Vol</h1>
+        <p>Par Raphael Bosc Racic, Matthieu Barbot, Charlot Paul, Lucas Blanchard</p>
+    </header>
+
+    <!-- Menu de navigation -->
+    <nav>
+        <ul>
+            <li><a href="simulateur.html">Simulateur</a></li>
+            <li><a href="manuel.html">Manuel</a></li>
+        </ul>
+    </nav>
+
+    <!-- Bloc principal du simulateur -->
+    <main id="simulator">
+        <section class="content">
+            <h2>Manuel d'utilisation du Simulateur</h2>
+
+            <h3>Présentation</h3>
+            <p>Ce simulateur permet de prendre le contrôle d'un avion virtuel et d'explorer différentes fonctionnalités de pilotage.</p>
+
+            <h3>Interface principale</h3>
+            <p>Le simulateur se compose des éléments suivants :</p>
+
+            <!-- Structure des cases -->
+            <section id="simulator-layout">
+                <div id="main-view" class="view">Vue principale</div>
+
+                <div id="start-stop-flight" class="control">Démarrer/Arrêter le vol</div>
+                <div id="dashboard" class="panel">Tableau de Bord</div>
+                <div id="sidebar-menu" class="panel">Menu latéral</div>
+
+                <div id="change-airport-plane" class="control">Changer d'Aéroport/Avion</div>
+                <div id="airspeed-indicator" class="instrument">Anémomètre</div>
+                <div id="attitude-indicator" class="instrument">Horizon latéral</div>
+                <div id="altimeter" class="instrument">Altimètre</div>
+                <div id="weather-settings" class="panel">Réglage météo</div>
+
+                <div id="heading-indicator" class="instrument">Compas</div>
+                <div id="flight-console" class="instrument">Console de Vol</div>
+                <div id="vertical-speed-indicator" class="instrument">Variomètre</div>
+            </section>
+
+            <h3>Raccourcis clavier</h3>
+            <p>Certains contrôles peuvent être effectués plus rapidement grâce à des raccourcis clavier :</p>
+            <ul>
+                <li><kbd>W</kbd> : Augmenter la puissance des moteurs.</li>
+                <li><kbd>S</kbd> : Réduire la puissance.</li>
+                <li><kbd>A</kbd> : Incliner l'avion vers la gauche.</li>
+                <li><kbd>D</kbd> : Incliner l'avion vers la droite.</li>
+                <li><kbd>Space</kbd> : Activer/Désactiver le frein.</li>
+            </ul>
+
+            <h3>Remarque</h3>
+            <p>Ce simulateur est en constante évolution. Si vous remarquez un bug, merci de contacter le support.</p>
+        </section>
+    </main>
+
+</body>
+</html>

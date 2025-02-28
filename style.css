@@ -1,0 +1,206 @@
+/* Police de caractères appliquée à toutes les balises du site */
+* {
+    font-family: Arial, sans-serif;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+nav {
+    background-color: #444;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #333;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f0f0f0;
+}
+
+kbd {
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1rem;
+}
+
+/* Mise en page du simulateur */
+#simulator-layout {
+    display: grid;
+    height: calc(100vw * 9 / 16); /* Ratio 16:9 */
+    width: 80vw; /* Largeur max */
+    margin: auto; /* Centrage */
+    
+    /* Définition des colonnes et lignes basées sur tes valeurs */
+    grid-template-columns: 42fr 151fr 37fr 149fr 38fr 151fr 38fr 149fr 36fr 151fr;
+    grid-template-rows: 29fr 113fr 37fr 76fr 37fr 78fr 37fr 76fr;
+
+    gap: 5px; /* Espacement entre les cases */
+    padding: 20px;
+}
+
+/* Définition des positions de chaque bloc */
+#main-view {
+    grid-column: 2 / span 30;
+    grid-row: 2;
+    background-color: yellow;
+}
+
+#start-stop-flight {
+    grid-column: 2;
+    grid-row: 4;
+    background-color: red;
+}
+
+#dashboard {
+    grid-column: 4 / span 5;
+    grid-row: 4;
+    background-color: blue;
+}
+
+#sidebar-menu {
+    grid-column: 10;
+    grid-row: 4;
+    background-color: green;
+}
+
+#change-airport-plane {
+    grid-column: 2;
+    grid-row: 6;
+    background-color: red;
+}
+
+#airspeed-indicator {
+    grid-column: 4;
+    grid-row: 6;
+    background-color: blue;
+}
+
+#attitude-indicator {
+    grid-column: 6;
+    grid-row: 6;
+    background-color: blue;
+}
+
+#altimeter {
+    grid-column: 8;
+    grid-row: 6;
+    background-color: blue;
+}
+
+#weather-settings {
+    grid-column: 10;
+    grid-row: 6;
+    background-color: green;
+}
+
+#heading-indicator {
+    grid-column: 4;
+    grid-row: 8;
+    background-color: blue;
+}
+
+#flight-console {
+    grid-column: 6;
+    grid-row: 8;
+    background-color: blue;
+}
+
+#vertical-speed-indicator {
+    grid-column: 8;
+    grid-row: 8;
+    background-color: blue;
+}
+
+/* Style des cases */
+#simulator-layout div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+/* Exemple pour un autre bloc */
+#knots {
+    grid-column: 1; /* Sur la colonne 1 */
+    grid-row: 2 / 7; /* De la ligne 2 à la ligne 7 */
+    background-color: orange;
+}
